@@ -1,0 +1,55 @@
+header, footer, article, nav, div {
+    padding: 20px;
+    background: darkgoldenrod;
+}
+
+#mainArticle > div {
+    background: darkolivegreen;
+}
+
+#mainArticle > div > div {
+    background: darkolivegreen;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 1fr 15%;
+    grid-template-rows: 60px 1fr 60px;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    grid-template-areas: "header header header" "nav article ads" "footer footer footer"
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#mainArticle {
+    grid-area: article;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+#ads {
+    grid-area: ads;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 80px 1fr 70px 70px;
+        grid-template-areas: "nav" "header" "article" "ads" "footer";
+    }
+}
+
+#childGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
