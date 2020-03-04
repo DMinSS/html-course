@@ -1,0 +1,23 @@
+{
+  "name": "html-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMinSS/html-course.git"
+  },
+  "author": "Dmytro M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMinSS/html-course/issues"
+  },
+  "homepage": "https://github.com/DMinSS/html-course#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
